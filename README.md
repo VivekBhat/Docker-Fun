@@ -3,6 +3,7 @@ This repo just has some docker coding that I did for practicing docker and to se
 
 
 ## Preqs
+
 1. VirtualBox
 2. Vagrant
 3. Docker
@@ -21,16 +22,20 @@ docker run hello-world
 
 ![helloworld](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/hello%20world.png)
 
+<br>
+
+----
+
 ### Creating docker image
 
-2. Build a docker environment for running build.  Create a "Dockerfile" and place this content inside:
+* Build a docker environment for running build.  Create a "Dockerfile" and place this content inside:
 
 **Output:** 
 
 ![dockerfile](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerfile.png)
 
 
-3. Build the the docker image
+* Build the the docker image
 ```
 sudo docker build -t ncsu/buildserver .
 ```
@@ -40,7 +45,7 @@ sudo docker build -t ncsu/buildserver .
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerbuild.png)
 
  
-4. See what images are current available on the machine.
+* See what images are current available on the machine.
 ```
 sudo docker images
 ```
@@ -50,7 +55,7 @@ sudo docker images
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerimages.png)
 
 
-5. Verify image works and can run a maven command.
+* Verify image works and can run a maven command.
 ```
 sudo docker run -it ncsu/buildserver mvn --version
 ```
