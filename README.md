@@ -63,3 +63,12 @@ We're going to need a container, with a process *still* running in it, meaning w
 Output: 
 
 ![running container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/runningcontainer.png)
+
+This will show you last container id created.    
+
+    sudo docker ps -l
+
+Output: 
+
+![id container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/containerid.png)
+
