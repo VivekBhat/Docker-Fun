@@ -147,4 +147,10 @@ nvm use 0.11.13
 echo "nvm use 0.11.13" >> ~/.profile
 ```
 
+* A simple http server in node.
+
+```
+cd BuildServer
+node server.js
+```
 
