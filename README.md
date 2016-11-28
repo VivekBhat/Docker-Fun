@@ -154,3 +154,7 @@ cd BuildServer
 node server.js
 ```
 
+**Output:** 
+
+![server](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/server.png)
+
