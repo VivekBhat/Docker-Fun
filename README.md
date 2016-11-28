@@ -98,3 +98,17 @@ docker exec -it 6195dba8e712 ls
 docker commit 6195dba8e712 ncsu/buildserver
 ```
 **Now, any new container created from this image will have the new chanage.**
+
+### Building
+
+In your host VM, create 'build.sh' and place the following inside: 
+```
+git clone https://github.com/CSC-326/JSPDemo
+cd JSPDemo
+mvn compile -DskipTests -Dmaven.javadoc.skip=true
+```
+**Output:** 
+ 
+ As we can see foo.txt is added
+
+![Building](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/build.png)
