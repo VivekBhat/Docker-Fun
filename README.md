@@ -47,7 +47,7 @@ Verify image works and can run a maven command.
 ### Fun Stuff 
 ##### Containers
 
-Let's look at all the containers we have created by running commands above.
+* Let's look at all the containers we have created by running commands above.
 
     sudo docker ps -a 
 
@@ -56,7 +56,7 @@ Output:
 ![containersadded](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/createdcontainers.png)
 
 
-We're going to need a container, with a process *still* running in it, meaning we need the `-d` arg.
+* We're going to need a container, with a process *still* running in it, meaning we need the `-d` arg.
 
     sudo docker run -it -d ncsu/buildserver
 
@@ -64,7 +64,7 @@ Output:
 
 ![running container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/runningcontainer.png)
 
-This will show you last container id created.    
+* This will show you last container id created.    
 
     sudo docker ps -l
 
@@ -72,3 +72,6 @@ Output:
 
 ![id container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/containerid.png)
 
+* Let's take last container, and update it.
+
+    sudo docker exec -it 6195dba8e712 script /dev/null -c "echo 'Hello' > foo.txt"
