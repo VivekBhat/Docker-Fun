@@ -74,4 +74,10 @@ Output:
 
 * Let's take last container, and update it.
 
+```
     sudo docker exec -it 6195dba8e712 script /dev/null -c "echo 'Hello' > foo.txt"
+```
+* Make sure we can see change:
+```
+docker exec -it 674183b76a10 ls
+```
