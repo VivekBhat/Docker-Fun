@@ -18,10 +18,15 @@ Output:
 ![dockerfile](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerfile.png)
 
 
-Building the  the docker image
+Build the the docker image
 
     sudo docker build -t ncsu/buildserver .
-    
+  
+ Output: 
+
+![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerbuild.png)
+
+ 
 See what images are current available on the machine.
 
     sudo docker images
