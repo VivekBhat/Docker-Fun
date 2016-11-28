@@ -101,14 +101,20 @@ docker commit 6195dba8e712 ncsu/buildserver
 
 ### Building
 
-In your host VM, create 'build.sh' and place the following inside: 
+* In your host VM, create 'build.sh' and place the following inside: 
 ```
 git clone https://github.com/CSC-326/JSPDemo
 cd JSPDemo
 mvn compile -DskipTests -Dmaven.javadoc.skip=true
 ```
+
+
+* Execute script
+```
+chmod +x build.sh
+sudo docker run -v /home/<username>/:/vol ncsu/buildserver sh -c /vol/build.sh
+```
+
 **Output:** 
  
- As we can see foo.txt is added
-
 ![Building](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/build.png)
