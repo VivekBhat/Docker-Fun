@@ -5,7 +5,7 @@ Verifying we can run docker:
 ```
 docker run hello-world
 ```
-Output: 
+**Output:** 
 
 ![helloworld](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/hello%20world.png)
 
@@ -13,34 +13,37 @@ Output:
 
 Build a docker environment for running build.  Create a "Dockerfile" and place this content inside:
 
-Output: 
+**Output:** 
 
 ![dockerfile](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerfile.png)
 
 
-Build the the docker image
+* Build the the docker image
+```
+sudo docker build -t ncsu/buildserver .
+```
 
-    sudo docker build -t ncsu/buildserver .
-  
- Output: 
+**Output:** 
 
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerbuild.png)
 
  
-See what images are current available on the machine.
+* See what images are current available on the machine.
+```
+sudo docker images
+```
 
-    sudo docker images
-
- Output: 
+**Output:** 
 
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerimages.png)
 
 
-Verify image works and can run a maven command.
+* Verify image works and can run a maven command.
+```
+sudo docker run -it ncsu/buildserver mvn --version
+```
 
-    sudo docker run -it ncsu/buildserver mvn --version
-
- Output: 
+**Output:** 
 
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockermvnversion.png)
 
@@ -51,33 +54,35 @@ Verify image works and can run a maven command.
 
     sudo docker ps -a 
 
-Output: 
+**Output:** 
 
 ![containersadded](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/createdcontainers.png)
 
 
 * We're going to need a container, with a process *still* running in it, meaning we need the `-d` arg.
+```
+sudo docker run -it -d ncsu/buildserver
+```
 
-    sudo docker run -it -d ncsu/buildserver
-
-Output: 
+**Output:** 
 
 ![running container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/runningcontainer.png)
 
 * This will show you last container id created.    
+```
+sudo docker ps -l
+```
 
-    sudo docker ps -l
-
-Output: 
+**Output:** 
 
 ![id container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/containerid.png)
 
 * Let's take last container, and update it.
+```
+sudo docker exec -it 6195dba8e712 script /dev/null -c "echo 'Hello' > foo.txt"
+```
 
-```
-    sudo docker exec -it 6195dba8e712 script /dev/null -c "echo 'Hello' > foo.txt"
-```
 * Make sure we can see change:
 ```
-docker exec -it 674183b76a10 ls
+docker exec -it 6195dba8e712 ls
 ```
