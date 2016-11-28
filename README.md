@@ -130,3 +130,21 @@ sudo docker run -v /home/<username>/:/vol ncsu/buildserver sh -c /vol/build.sh
 ```
 
 ![Building](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/build.png)
+
+
+
+### Server
+
+* We will create a simple server to trigger a build server.
+
+**Install node (on the VM).**
+
+```
+curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+source ~/.profile
+nvm install v0.11.13
+nvm use 0.11.13
+echo "nvm use 0.11.13" >> ~/.profile
+```
+
+
