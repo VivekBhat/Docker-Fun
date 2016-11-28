@@ -1,24 +1,36 @@
 # Docker-Fun
-This repo just has some docker coding to practice docker and see its functioning
+This repo just has some docker coding that I did for practicing docker and to see its functioning and working.
+
+
+## Preqs
+1. VirtualBox
+2. Vagrant
+3. Docker
+
+After The above prereqs are met:
+
+
+### Verification of system
 
 Verifying we can run docker:
 ```
 docker run hello-world
 ```
+
 **Output:** 
 
 ![helloworld](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/hello%20world.png)
 
 ### Creating docker image
 
-Build a docker environment for running build.  Create a "Dockerfile" and place this content inside:
+2. Build a docker environment for running build.  Create a "Dockerfile" and place this content inside:
 
 **Output:** 
 
 ![dockerfile](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerfile.png)
 
 
-* Build the the docker image
+3. Build the the docker image
 ```
 sudo docker build -t ncsu/buildserver .
 ```
@@ -28,7 +40,7 @@ sudo docker build -t ncsu/buildserver .
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerbuild.png)
 
  
-* See what images are current available on the machine.
+4. See what images are current available on the machine.
 ```
 sudo docker images
 ```
@@ -38,7 +50,7 @@ sudo docker images
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerimages.png)
 
 
-* Verify image works and can run a maven command.
+5. Verify image works and can run a maven command.
 ```
 sudo docker run -it ncsu/buildserver mvn --version
 ```
@@ -46,6 +58,8 @@ sudo docker run -it ncsu/buildserver mvn --version
 **Output:** 
 
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockermvnversion.png)
+
+----
 
 ### Fun Stuff 
 ##### Containers
