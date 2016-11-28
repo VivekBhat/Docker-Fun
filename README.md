@@ -116,5 +116,17 @@ sudo docker run -v /home/<username>/:/vol ncsu/buildserver sh -c /vol/build.sh
 ```
 
 **Output:** 
- 
+```
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /JSPDemo/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 29.075s
+[INFO] Finished at: Mon Nov 28 21:36:19 UTC 2016
+[INFO] Final Memory: 15M/37M
+[INFO] ------------------------------------------------------------------------
+
+```
+
 ![Building](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/build.png)
