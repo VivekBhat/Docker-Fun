@@ -31,6 +31,11 @@ See what images are current available on the machine.
 
     sudo docker images
 
+ Output: 
+
+![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerimages.png)
+
+
 Verify image works and can run a maven command.
 
     sudo docker run -it ncsu/buildserver mvn --version
