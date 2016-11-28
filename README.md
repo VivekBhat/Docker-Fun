@@ -15,7 +15,7 @@ Build a docker environment for running build.  Create a "Dockerfile" and place t
 
 Output: 
 
-![helloworld](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/hello%20world.png)
+![dockerfile](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerfile.png)
 
 
 Building the  the docker image
