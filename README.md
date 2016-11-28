@@ -86,3 +86,8 @@ sudo docker exec -it 6195dba8e712 script /dev/null -c "echo 'Hello' > foo.txt"
 ```
 docker exec -it 6195dba8e712 ls
 ```
+
+**Output:** 
+ 
+ * As we can see foo.txt is added
+![foo txt](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/fooadded.png)
