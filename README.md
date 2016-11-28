@@ -89,5 +89,12 @@ docker exec -it 6195dba8e712 ls
 
 **Output:** 
  
- * As we can see foo.txt is added
+ As we can see foo.txt is added
+
 ![foo txt](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/fooadded.png)
+
+* Now, let's commit this to our image.
+```
+docker commit 6195dba8e712 ncsu/buildserver
+```
+**Now, any new container created from this image will have the new chanage.**
