@@ -43,3 +43,15 @@ Verify image works and can run a maven command.
  Output: 
 
 ![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockermvnversion.png)
+
+
+##### Containers
+
+Let's look at all the containers we have created by running commands above.
+
+    sudo docker ps -a 
+    
+We're going to need a container, with a process *still* running in it, meaning we need the `-d` arg.
+
+    sudo docker run -it -d ncsu/buildserver
+
