@@ -20,7 +20,7 @@ docker run hello-world
 
 **Output:** 
 
-![helloworld](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/hello%20world.png)
+![helloworld](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/hello%20world.png?raw=true)
 
 <br>
 
@@ -32,7 +32,7 @@ docker run hello-world
 
 **Output:** 
 
-![dockerfile](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerfile.png)
+![dockerfile](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerfile.png?raw=true)
 
 
 * Build the the docker image
@@ -42,7 +42,7 @@ sudo docker build -t ncsu/buildserver .
 
 **Output:** 
 
-![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerbuild.png)
+![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerbuild.png?raw=true)
 
  
 * See what images are current available on the machine.
@@ -52,7 +52,7 @@ sudo docker images
 
 **Output:** 
 
-![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerimages.png)
+![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerimages.png?raw=true
 
 
 * Verify image works and can run a maven command.
@@ -62,7 +62,7 @@ sudo docker run -it ncsu/buildserver mvn --version
 
 **Output:** 
 
-![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockermvnversion.png)
+![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockermvnversion.png?raw=true)
 
 ----
 
@@ -75,7 +75,7 @@ sudo docker run -it ncsu/buildserver mvn --version
 
 **Output:** 
 
-![containersadded](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/createdcontainers.png)
+![containersadded](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/createdcontainers.png?raw=true)
 
 
 * We're going to need a container, with a process *still* running in it, meaning we need the `-d` arg.
@@ -85,7 +85,7 @@ sudo docker run -it -d ncsu/buildserver
 
 **Output:** 
 
-![running container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/runningcontainer.png)
+![running container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/runningcontainer.png?raw=true)
 
 * This will show you last container id created.    
 ```
@@ -94,7 +94,7 @@ sudo docker ps -l
 
 **Output:** 
 
-![id container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/containerid.png)
+![id container](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/containerid.png?raw=true)
 
 * Let's take last container, and update it.
 ```
@@ -110,7 +110,7 @@ docker exec -it 6195dba8e712 ls
  
  As we can see foo.txt is added
 
-![foo txt](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/fooadded.png)
+![foo txt](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/fooadded.png?raw=true)
 
 * Now, let's commit this to our image.
 ```
@@ -148,7 +148,7 @@ sudo docker run -v /home/<username>/:/vol ncsu/buildserver sh -c /vol/build.sh
 
 ```
 
-![Building](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/build.png)
+![Building](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/build.png?raw=true)
 
 
 
@@ -175,5 +175,5 @@ node server.js
 
 **Output:** 
 
-![server](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/server.png)
+![server](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/server.png?raw=true)
 
