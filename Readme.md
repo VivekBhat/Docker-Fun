@@ -52,7 +52,7 @@ sudo docker images
 
 **Output:** 
 
-![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerimages.png?raw=true
+![dockerbuild](https://github.com/VivekBhat/Docker-Fun/blob/master/resources/dockerimages.png?raw=true)
 
 
 * Verify image works and can run a maven command.
